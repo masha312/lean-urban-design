@@ -1,0 +1,10 @@
+/* .cursor {
+  content: url("../../arrow.svg");
+  height:40px;
+  width:40px;
+  position: absolute;
+  z-index: 40;
+  opacity: 0;
+  transform: translate(-100%, -100%);
+  pointer-events: none;
+} */

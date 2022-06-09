@@ -1,0 +1,27 @@
+.content--error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas {
+  height: 160px;
+  width: 320px;
+}
+
+.loadingclass {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-404 .page-content p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.error-404 .page-content a {
+  color: var(--color-navy);
+}

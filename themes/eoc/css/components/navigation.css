@@ -1,0 +1,45 @@
+.navigation {
+	display: flex;
+	justify-content: flex-end;
+  flex-direction: row;
+  margin: 2rem 4rem;
+  margin-bottom: 4rem;
+}
+
+.navigation__link--previous a {
+	margin-right: 12px;
+}
+
+.navigation__link--previous svg {
+	margin-right: 2px;
+}
+
+.navigation__link--next a {
+
+}
+
+.navigation__link--next svg {
+	margin-left: 2px;
+	width: 20px;
+}
+
+.navigation__link a {
+    color: var(--color-navy);
+		display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation__link svg {
+	position: relative;
+	width: 20px;
+	top: 1px;
+	opacity: 0.5;
+}
+
+@media (max-width: 45em) {
+  .navigation {
+		justify-content: center;
+    margin: 2rem;
+	}
+}

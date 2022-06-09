@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url(https://eoc.media/wp-content/themes/eoc/fonts/ClearSans-Thin.woff);
+    font-weight: "300";
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url(https://eoc.media/wp-content/themes/eoc/fonts/ClearSans-Italic.woff);
+    font-weight: normal;
+    font-style: italic;
+}

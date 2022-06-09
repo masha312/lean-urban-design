@@ -1,0 +1,51 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300 !important;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:not(.hide-underline) {
+  border-bottom: 1px solid transparent;
+  font-style: normal;
+}
+
+a:hover:not(.hide-underline) {
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-navy);
+}
+
+.home, .archive, .search, .error404, .page-template {
+    background: var(--color-white);
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--color-navy);
+    outline-offset: 0.25rem;
+    border-radius: 0px;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+h2:not(.sort-name) {
+  text-transform: uppercase;
+  font-size: 1rem;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+@media (min-width: 45em) {
+  .main {
+    margin-top: 2rem;
+  }
+}

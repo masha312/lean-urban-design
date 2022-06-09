@@ -1,0 +1,222 @@
+/* POST CARD */
+
+.post {
+  position: relative;
+  background: #eeeeee;
+  border: none;
+  border-radius: 10px 10px 8px 8px;
+  transition: ease-in 0.1s;
+  margin: 0px;
+}
+
+.post-thumbnail img {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.post:hover {
+  transform: translate(0, -8px);
+}
+
+.post:hover .wpulike {
+  opacity: 1;
+}
+
+.post__container {
+  padding: 0px 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.post__header h2 {
+  padding: 8px 0px;
+  margin-top: 0.5rem;
+  color: var(--color-black);
+  font-weight: normal;
+}
+
+.post__header h2 a {
+  color: var(--color-navy) !important;
+  font-size: 1.25rem;
+
+}
+
+.post__header h2 a:visited {
+  color: var(--color-navy);
+}
+
+.post__header h2 a:hover {
+  color: var(--color-navy) !important;
+  font-style: normal;
+}
+
+
+/* POST CONTENT */
+
+.post__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  color: var(--color-black);
+  margin: 0px;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.post__content p {
+  max-width: 95%;
+  margin: 6px 0px;
+}
+
+.post__content a, .post__content a:hover, post__content a:visited {
+  color: var(--color-navy);
+}
+
+.post__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  padding-top: 4px;
+}
+
+.post__button {
+  display: flex;
+  align-items: center;
+  color: var(--color-navy);
+  font-family: "Clear Sans", sans-serif;
+  padding: 0.5rem 0rem;
+  margin: 0.25rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.post__button svg {
+  position: relative;
+  top: 1px;
+  opacity: 0.7;
+  transition-duration: 0.3s;
+}
+
+.post__button:hover svg {
+  opacity: 1;
+}
+
+.post__info div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fullwidth {
+  grid-column: 1 / -1;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.fullwidth {
+  background: #f0f0f0;
+}
+
+.is-selected {
+  background: #f0f0f0;
+}
+
+.post__links {
+  align-self: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* BADGES */
+
+.badge {
+  border-radius: 4px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  padding-top: 2px;
+  padding-right: 10px;
+  transition: 0.3s;
+  margin-top: 16px;
+  color: white !important;
+  height: 40px;
+  font-size: 1rem;
+  font-style: normal !important;
+  margin-right: 8px;
+}
+
+.badge:hover {
+  font-style: normal;
+}
+
+.badge--oku {
+  background-color: var(--color-black);
+}
+
+.badge--oku svg {
+  margin-left: 4px;
+  position: relative;
+  top: 4px;
+}
+
+.badge--indiebound svg {
+  margin-left: 8px;
+  position: relative;
+  bottom: 2px;
+}
+
+.badge--indiebound {
+  background-color: #991B1E;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 2px;
+  padding-right: 16px;
+  padding-left: 14px;
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+  }
+
+  40% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px)
+  }
+
+  60% {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px)
+  }
+}
+
+.oku-circle {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.badge--oku:hover .oku-circle {
+  animation-name: bounce;
+}
+
+@media (max-width: 45em) {
+  .post__links {
+    align-self: flex-start;
+  }
+
+  .badge {
+    margin-left: 0px;
+    margin-right: 6px;
+  }
+}

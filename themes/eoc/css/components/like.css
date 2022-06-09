@@ -1,0 +1,25 @@
+.wpulike {
+  padding: 0;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+.wpulike-heart .wp_ulike_general_class {
+  box-shadow: none;
+}
+
+.wpulike-heart .wp_ulike_put_image {
+  padding: 15px;
+}
+
+.wpulike-heart .wp_ulike_put_image:after {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.wpulike-heart .count-box {
+  font-size: 16px !important;
+  color: var(--color-black) !important;
+  cursor: default;
+  opacity: 0.5;
+}
