@@ -52,9 +52,8 @@
 /* POST CONTENT */
 
 .post__content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  column-count:3;
+  column-gap: 40px;
   position: relative;
   color: var(--color-black);
   margin: 0px;
@@ -62,9 +61,8 @@
   padding: 1rem;
 }
 
-.post__content p {
-  max-width: 95%;
-  margin: 6px 0px;
+.post__content p:not(:first-of-type) {
+  margin: 16px 0px;
 }
 
 .post__content a, .post__content a:hover, post__content a:visited {
@@ -138,7 +136,7 @@
   padding-top: 2px;
   padding-right: 10px;
   transition: 0.3s;
-  margin-top: 16px;
+  margin-top: 8px;
   color: white !important;
   height: 40px;
   font-size: 1rem;
@@ -219,4 +217,21 @@
     margin-left: 0px;
     margin-right: 6px;
   }
+}
+
+@media (max-width: 1200px) {
+    .post__content {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 960px) {
+    .post__content {
+        column-count: 1;
+
+    }
+   .post__content p {
+       max-width: 400px;
+
+    }
 }

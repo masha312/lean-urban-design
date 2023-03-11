@@ -15,7 +15,6 @@ let errorPage = function(sketch) {
 
   }
   sketch.draw = function() {
-    console.log("start!")
     sketch.background("#fafafa")
 
     const nl = 0.01
@@ -29,7 +28,6 @@ let errorPage = function(sketch) {
   		drawPoints(point, sketch, nl);
     })
     sketch.endShape()
-    console.log("end!")
   }
 }
 
